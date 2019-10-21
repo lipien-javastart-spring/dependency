@@ -2,7 +2,7 @@ package dependency;
 
 public class MessagePrinter {
 
-    private MessageProducer messageProducer = new MessageProducer();
+    private MessageProducer messageProducer = new SimpleMessageProducer();
 
     public void printMessage() {
         String message = messageProducer.getMessage();
